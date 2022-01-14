@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <center>
+    <h1>Merkle Tree Allow List Proof Generation</h1>
+    <p>Paste in the allow list addresses separated by newline.</p>
+    <div><textarea rows="30" cols="50" id="leaves"></textarea></div><br />
+    <button id="generate">Generate</button><br /><br />
+    <div>Merkle Root: <span id="proof"></span></div>
+    <br />
+    <hr>
+    <h2>Check Proof</h2>
+    <label for="address">address:</label>
+    <input type="text" id="address" name="address">
+    <button id="verify">Verify</button><br /><br />
+    <div>Proof: <span id="generatedProof"></span></div>
+    <div>Verify Result: <span id="result"></span></div>
+
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/keccak256@latest/keccak256.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
